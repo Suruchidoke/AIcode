@@ -31,3 +31,5 @@ hill_climb(State, Value, BestState) :-
         write(' | Value: '), write(Value), nl,
         BestState = State
     ).
+
+%?- hill_climb(Best).
