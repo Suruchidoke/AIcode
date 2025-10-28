@@ -25,3 +25,12 @@ grandmother(X,Z):- mother(X,Y),parent(Y,Z).
 grandfather(X,Z):- father(X,Y),parent(Y,Z).
 wife(X,Y):- parent(X,Z),parent(Y,Z),female(X),male(Y).
 uncle(X,Z):- brother(X,Y),parent(Y,Z).
+
+%?- mother(pam, bob).
+?- father(tom, bob).
+?- sister(liz, bob).
+?- grandparent(tom, ann).
+?- grandmother(pam, pat).
+?- grandfather(bob, jim).
+?- wife(pam, tom).
+?- uncle(peter, jim).
