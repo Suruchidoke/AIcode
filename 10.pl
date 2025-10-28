@@ -50,4 +50,6 @@ plan(Plan) :-
     goal_state(GoalState),
     dfs(InitialState, GoalState, [InitialState], Plan).
 
+?- [blocks].
+?- plan(Plan).
  
