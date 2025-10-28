@@ -159,3 +159,6 @@ printsolution([State, Parent, PC, H, TC], Closed) :-
     printsolution([Parent, GrandParent, PC1, H1, TC1], Closed),
     write(State), write('  PC:'), write(PC),
     write('  H:'), write(H), write('  TC:'), write(TC), nl.
+
+
+?- go([1,2,3,4,0,6,7,5,8],[1,2,3,4,5,6,7,8,0]).
